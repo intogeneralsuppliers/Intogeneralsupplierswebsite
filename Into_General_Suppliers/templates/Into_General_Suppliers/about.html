@@ -1,0 +1,68 @@
+
+	{% extends "Into_General_Suppliers/base.html" %}
+	{% block content %}
+
+		<div class="parallax-container">
+      <div class="parallax"><img class="col s12 m4 l6 xl12" src="{{user.about_page.about_pic.url }}"></div>
+      <div style="margin-top: 200px" class="caption center-align">
+				<h1 class="white-text">About Us</h1>
+			</div>
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Background</h2>
+        <p class="grey-text text-darken-3 lighten-3"><b>Into General Suppliers</b> was registered with Department of Trade and Industry in 2002 and started oprating the same year. Ms Lillian Zuma heads to the company as a Managing Director and has extensive experience in managing large scale projects.</p>
+        <p class="grey-text text-darken-3 lighten-3">Through her leardership <b>Into General Suppliers</b> has been able to complete contracts thousands rands. The company is also registered with Construstion Industry Development Board.</p>
+      </div>
+    </div>
+    <div class="section blue lighten-3">
+      <div class="row container">
+        <h2 class="header">Vision</h2>
+        <p class="white-text">To be recognized as a reliable and preferred leader in construstion services</p>
+      </div>
+    </div>
+    <div class="section green lighten-3">
+      <div class="row container">
+        <h2 class="header">Mission</h2>
+        <p class="white-text">We intend realizing our vision though providing not only good quality but also professional service that will enable our clients to achieve their desired satisfaction.</p>
+      </div>
+    </div>
+    <div class="section yellow lighten-3">
+      <div class="row container">
+        <h2 class="header">Values</h2>
+       <span class="black-text lighten-3">In delivering quality service, we practice the following values:
+	       <br>
+	       -Client value
+	       <br>
+	       -Practice value
+	       <br>
+	       -Customer and stakeholder driven
+	       <br>
+	       -Professionalism
+	    </span>
+      </div>
+    </div>
+    <div class="section blue lighten-3">
+      <div class="row container">
+        <h2 class="header">Business Principles</h2>
+        <p class="white-text">Our service is based on the following principles:
+        	<br>
+	       		<b>-Business Results</b> : deliverable value is equivalent to meet client desired satisfaction.
+	       	<br>
+	       	<br>
+	       		<b>-Business Growth</b> : We believe that growth must be sustainable, profitable and capital efficent.
+	       	<br>
+        </p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img class="col s12 m4 l6 xl12" src="{{user.about_page.about_pic2.url }}"></div>
+      <div style="margin-top: 200px" class="caption center-align">
+				<h1 class="black-text lighten-3">That's all about us</h1>
+			</div>
+    </div>
+
+	{% for post in posts%}
+		
+	{% endfor %}
+	{% endblock content %}

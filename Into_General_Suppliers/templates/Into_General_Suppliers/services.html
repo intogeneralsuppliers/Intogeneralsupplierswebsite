@@ -1,0 +1,139 @@
+
+	{% extends "Into_General_Suppliers/base.html" %}
+	{% block content %}
+		<div class="parallax-container">
+      		<div class="parallax"><img class="col s12 m4 l6 xl12" src="{{user.services_page.service.url }}"></div>
+      		<div style="margin-top: 200px" class="caption center-align">
+				<h1 class="white-text">Services</h1>
+			</div>
+    	</div>
+
+    	<br>
+
+    		{% for card in cards %}
+				<div class="container col s12 m7 l6 xl6">
+		    		<div class="row">
+		    			<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.building.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Building<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Building<i class="material-icons right">close</i></span>
+						      <p>{{card.building_content}}</p>
+						    </div>
+		  				</div>
+				    	<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.plumbing.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Plumbing<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Plumbing<i class="material-icons right">close</i></span>
+						      <p>{{card.plumbing_content}}</p>
+						    </div>
+		  				</div>
+				    	<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.flooring.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Flooring<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Flooring<i class="material-icons right">close</i></span>
+						      <p>{{card.flooring_content}}</p>
+						    </div>
+		  				</div>
+		  				<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.painting.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Painting<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Painting<i class="material-icons right">close</i></span>
+						      <p>{{card.painting_content}}</p>
+						    </div>
+		  				</div>
+		  				<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.roofing.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Roofing<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Roofing<i class="material-icons right">close</i></span>
+						      <p>{{card.roofing_content}}</p>
+						    </div>
+		  				</div>
+		  				<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.walling.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Walling<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Walling<i class="material-icons right">close</i></span>
+						      <p>{{card.walling_content}}</p>
+						    </div>
+		  				</div>
+		  				<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.paving.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Paving<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Paving<i class="material-icons right">close</i></span>
+						      <p>{{card.paving_content}}</p>
+						    </div>
+		  				</div>
+		  				<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.renovations.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Renovations<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Renovations<i class="material-icons right">close</i></span>
+						      <p>{{card.renovations_content}}</p>
+						    </div>
+		  				</div>
+		  				<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.extentions.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Extentions<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Extentions<i class="material-icons right">close</i></span>
+						      <p>{{card.extentions_content}}</p>
+						    </div>
+		  				</div>
+		  				<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="{{card.electricity.url }}">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4">Electricity<i class="material-icons right">more_vert</i></span>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Electricity<i class="material-icons right">close</i></span>
+						      <p>{{card.electricity_content}}</p>
+						    </div>
+		  				</div>
+		  			</div>
+		  		</div>		
+		    {% endfor %}
+	{% endblock content %}
