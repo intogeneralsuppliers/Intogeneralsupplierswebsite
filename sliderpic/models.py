@@ -14,6 +14,10 @@ class Logo(models.Model):
 	user = models.OneToOneField(User, default=1, on_delete=models.CASCADE)
 	images = models.ImageField(default='default.jpg', upload_to='slide_images')
 
+class Logo2(models.Model):
+	user = models.OneToOneField(User, default=1, on_delete=models.CASCADE)
+	images = models.ImageField(default='default.jpg', upload_to='slide_images')
+
 
 	def __str__(self):
 		return f'{self.user.username} Logo_Page'

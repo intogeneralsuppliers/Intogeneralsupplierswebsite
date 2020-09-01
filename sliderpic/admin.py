@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Home_Page
 from .models import Logo
+from .models import Logo2
 from .models import Services_Page
 from .models import About_Page
 from .models import Contact_Page
@@ -20,6 +21,7 @@ from .models import Electricity
 # Register your models here.
 admin.site.register(Home_Page)
 admin.site.register(Logo)
+admin.site.register(Logo2)
 admin.site.register(Services_Page)
 admin.site.register(About_Page)
 admin.site.register(Contact_Page)
